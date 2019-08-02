@@ -1,6 +1,5 @@
 import fs from 'fs';
-import { resolve } from 'dns';
-import { rejects } from 'assert';
+
 
 let allData;
 
