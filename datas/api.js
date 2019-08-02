@@ -20,10 +20,15 @@ function setAllUsers() {
     })
 }
 export const addNewUser = (user) => {
+    console.log(user)
     if(hasUser(user))
     return;
 
     users.allUsers.push(user);
+    writeUsersToFile()
+}
+
+function writeUsersToFile(){
     fs.writeFile(filePath, JSON.stringify(users), err => {
         
     });
@@ -40,4 +45,14 @@ function hasUser(user){
 
 export const getAllUsers = () => {
     return users.allUsers;
+}
+
+export const refreshUser = user => {
+    users.allUsers.forEach(e => {
+        if(e.chat_id === user.chat_id){
+            e.city_code = user.city_code;
+        }
+    })
+    writeUsersToFile()
+
 }
