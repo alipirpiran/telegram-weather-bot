@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "run": "node -r esm index.js"
+    "run": "node -r esm index.js",
+    "build" : "node -r esm index.js"
   },
   "author": "Ali Pirpiran",
   "license": "ISC",

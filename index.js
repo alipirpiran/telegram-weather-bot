@@ -58,6 +58,7 @@ const forms = {
 }
 
 bot.onText(/\/start/, msg => {
+    console.log('new Start : ', msg, '--------------');
     let chatId = msg.chat.id;
     let name = msg.from.first_name;
 
