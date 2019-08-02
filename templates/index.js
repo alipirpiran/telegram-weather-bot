@@ -14,3 +14,16 @@ export const mainMenuText = (cityName, username) => {
     شهر شما : ${cityName ? cityName : 'انتخاب نشده'}
 `
 }
+
+export const weather = (time, temp, wind_speed) => {
+
+    return `
+    وضعیت آب و هوا
+
+ساعت : ${time}
+------------------
+- دما : ${temp}
+- سرعت باد : ${wind_speed}
+
+`
+}

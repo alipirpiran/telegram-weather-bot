@@ -30,13 +30,10 @@ export const isNewUser = (chat_id, allUsers) => {
 }
 
 export const getUser = (chat_id, allUsers)=>{
-    console.log(allUsers)
     for (const item of allUsers) {
-        console.log(item)
         if(item.chat_id === chat_id)
         return item;
     }
-    console.log('asdfasdf')
     return null;
 }
 
