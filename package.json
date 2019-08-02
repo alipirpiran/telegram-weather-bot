@@ -1,0 +1,18 @@
+{
+  "name": "telegram-bot--weather",
+  "version": "1.0.0",
+  "description": "telgram bot for weahter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run": "node -r esm index.js"
+  },
+  "author": "Ali Pirpiran",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.0.0",
+    "esm": "^3.2.25",
+    "node-telegram-bot-api": "^0.30.0",
+    "xmlhttprequest": "^1.8.0"
+  }
+}
